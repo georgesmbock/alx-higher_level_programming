@@ -3,5 +3,5 @@ str = "Python is an interpreted, interactive, object-oriented programming\
          language that combines remarkable power with very clear syntax"
 print(len(str))
 #str = str[39:66]
-str = str[-18:-23]
+str = str[-23:-18]
 print(str)
