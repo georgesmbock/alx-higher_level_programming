@@ -2,5 +2,5 @@
 str = "Python is an interpreted, interactive, object-oriented programming\
          language that combines remarkable power with very clear syntax"
 print(len(str))
-str = str[39:65] + str[66:70]
+str = str[39:65] + str[66:67]
 print(str)
