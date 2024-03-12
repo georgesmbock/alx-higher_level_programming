@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for letter in range(97, 143, 1):
+for letter in range(97, 122, 1):
     let = chr(letter)
-    print("{}".format(let))
+    print("{}".format(let), end='')
