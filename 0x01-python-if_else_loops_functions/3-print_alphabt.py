@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for l in range(97,123,1):
-    if (l == 101 or l == 113):
+for letter in range(97, 123, 1):
+    if (letter == 101 or letter == 113):
         continue
     else:
-        print("{}".format(chr(l)), end='')
+        print("{}".format(chr(letter)), end='')
