@@ -10,5 +10,5 @@ if number >= 0:
     else:
         print(f"Last digit of {number} is {res} and is 0")
 elif number < 0:
-    n = number div 10
+    n = number // 10
     print(f"Last digit of {number} is {number - 10*n} and is less than 6 and not 0")
