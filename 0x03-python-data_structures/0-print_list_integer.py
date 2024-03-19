@@ -8,4 +8,4 @@ def print_list_integer(my_list=[]):
         The return none value
     """
     for i in my_list:
-        prnt('{}'.format(i))
+        print('{}'.format(i))
