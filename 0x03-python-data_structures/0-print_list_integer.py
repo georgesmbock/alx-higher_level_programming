@@ -8,4 +8,5 @@ def print_list_integer(my_list=[]):
         The return none value
     """
     for i in my_list:
-        print('{}'.format(i))
+        if type(i) == int:
+            print('{}'.format(i))
