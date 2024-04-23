@@ -6,4 +6,4 @@ def magic_calculation(a, b):
     b = 3
     return
 
-dis.dic(magic_calculation)
+dis.dis(magic_calculation)
