@@ -12,5 +12,5 @@ if number >= 0:
     else:
         print(f"{str1} {number} is {res} and is 0")
 elif number < 0:
-    n = int(number / 10)
+    n = int(number / 10) # partie entière d'un entien négatif
     print(f"{str1} {number} is {number - 10*n} {str2}")
