@@ -1,2 +1,2 @@
--- Creates database named hbtn_0c_0 in my MySQl
-CREATE DATABASE hbtn_0c_0;
+-- Creates database named hbtn_0c_0 in my MySQl if not exists
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
