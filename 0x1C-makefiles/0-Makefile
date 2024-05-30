@@ -1,6 +1,6 @@
 all: school.o main.o
-	@gcc school school.c -o school.o main.c
+	@gcc -o school school.o main.o
 school.o: school.c
-	gcc -o school school.c
+	gcc -o school.o -c school.c
 main.o: main.c m.h
-	gcc -o main main.c m.h
+	gcc -o main.o -c main.c m.h
