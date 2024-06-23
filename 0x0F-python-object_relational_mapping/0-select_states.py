@@ -5,16 +5,16 @@ import MySQLdb
 
 if __name__ == '__main__':
     """ List all states """
-    username = sys.argv[1]
-    password = sys.argv[2]
-    database = sys.argv[3]
+    mysql_username = sys.argv[1]
+    mySql_password = sys.argv[2]
+    database_name = sys.argv[3]
 
     db = MySQLdb.connect(
             host="localhost",
-            user=username,
+            user=mySql_username,
             port=3306,
-            password=password,
-            db=database
+            password=mySql_password,
+            db=database_name
             )
 
     c = db.cursor()
