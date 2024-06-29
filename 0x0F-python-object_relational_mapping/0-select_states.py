@@ -1,33 +1,33 @@
 #!/usr/bin/python3
-"""This script list all rows of tables of the database named hbtn_0e_0_usa"""
-# Import libraries
+"""
+lists all states from the database hbtn_0e_0_usa
+"""
+
 import sys
 import MySQLdb
 
 if __name__ == '__main__':
-    # Set arguments
-    username = sys.argv[1]
-    password = sys.argv[2]
+    """
+    access the database and update state
+    """
+    mySql_username = sys.argv[1]
+    mySql_password = sys.argv[2]
     database_name = sys.argv[3]
 
-    # Set connection
-    db = MySQLdb.connect(
-            host='localhost',
-            user=username,
-            password=password,
-            db=database_name,
-            port=3306
-            )
+    conn = MySQLdb.connect(
+        host='localhost',
+        port=3306,
+        user=mySql_username,
+        passwd=mySql_password,
+        db=database_name,
+    )
 
-    # Initialization of cursor
-    cur = db.cursor()
-    # SQL request
-    cur.execute("SELECT * FROM states")
-    # Result
-    states = cur.fetchall()
-    # Display all rows
-    for state in states:
-        print(state)
-    # Close cursor and database
-    cur.close()
-    db.close()
+    cursor = conn.cursor()
+
+    cursor.execute('SELECT * FROM states ORDER BY id ASC')
+
+    for row in cursor.fetchall():
+        print(row)
+
+    cursor.close()
+    conn.close()
